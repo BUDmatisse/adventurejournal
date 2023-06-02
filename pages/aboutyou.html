@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+<!--
+Matisse Grigoryan 
+December 8, 2021
+Class: 125H
+Assignment: Term Project-->
+        
+          <title>Adventure Photo Journal</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width+device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Montserrat:wght@100;300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/normalize.css">
+        <link rel="stylesheet" href="../styles/main.css">
+        <link rel="stylesheet" href="../styles/normalize.css">
+        <link rel="stylesheet" href="../styles/aboutyou.css">
+        <link rel="stylesheet" href="../styles/slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="../js/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+        $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+        </script>   
+    </head>
+    
+     <body>
+        <div class="title">
+                <div class="banner">
+                <header>
+                    <h1 style="font-size: 350%">Adventure Photo Journal</h1>
+                </header>
+            </div>
+        </div>
+        
+        <div class="row">
+                <h2>Tell Us About You
+                </h2>
+         </div>    
+            
+        <div class="row">
+            <aside>
+                <p>Ralph Waldo Emerson -</p>
+                    <blockquote><q>To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.</q></blockquote>
+            </aside>
+        </div>
+        
+        
+         <nav id="mobile_menu"></nav>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="../index.html" title="Link to Home page">Home</a></li>
+                <li><a href="photos.html" >Photo Gallery</a></li>
+                <li><a href="destlinks.html" >Ratings</a></li>
+                <li><a href="visitfam.html" >Family</a></li>
+                <li><a href="aboutyou.html" class= "current">About You</a></li>
+            </ul>
+        </nav> 
+            
+        <main> 
+            <!--The validator website gave me errors on this table. The ones about the <br>, we talked about and you said are okay. The other is for the ul class outside of the form. I am aware of it but uncertain how to fix-->
+                <ul class="flex-outer">
+                        <form action="mailto:grigoryan.matisse@student.clackamas.edu" method="post" id="registration_form">
+                        <h3>Tell Us About You</h3>
+                        <fieldset>
+                        <!--<form>-->
+                        <label for="email">E-Mail</label><br>
+                        <input type="email" name="email" id="email" class="field" required><br>
+                        <label for="name">Name</label><br>
+                        <input type="text" name="name" id="name" class="field" required><br>
+                        <label for="date">Date</label><br>
+                        <input type="date" name="date" id="date" class="field"><br><br>
+                        <label for="visitor_type">How do you know us:</label>
+                        <select name="visitor_type" id="visitor_type"><br>
+                            <option value=""></option>
+                            <option value="fm">Family</option>
+                            <option value="fr">Friend</option>
+                            <option value="g">Guest</option><br>
+                        </select><br><br>
+                        <label for="survey">Do you like to travel?</label><br><br>
+                            <input type="radio" name="survey" id="survey" value="yes">Yes
+                            <input type="radio" name="survey" value="no">No<br><br>
+                        <label for="comment">Tell us more</label><br>
+                        <textarea id="comment" placeholder="Share your adventures or comment on our page" maxlength="4000"></textarea><br>
+                        <label>&nbsp;</label>
+                        <input type="submit" id="submit" value="Submit">
+                        </fieldset>
+                        </form>
+                    </ul>
+         </main>
+        
+        <div class="row">
+            <footer>
+                <p> Author Matisse Grigoryan 2021 </p>
+            </footer>
+        </div>
+    </body>
+</html>

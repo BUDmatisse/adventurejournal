@@ -1,0 +1,56 @@
+/* 
+Matisse Grigoryan 
+December 8, 2021
+Class: 125H
+Assignment: Term Project 
+*/ 
+
+table {
+    margin-left: 2.5%;
+    white-space: nowrap;
+    border-left: 2px solid gainsboro;
+    border-right: 2px solid gainsboro;
+}
+
+caption {
+    font-weight: bold;
+    padding-bottom: 3px;
+    font-size: 200%;
+    text-align: left;
+    padding: .5em;
+}
+
+th {
+   padding: 5px;
+   margin: 2em 10em 2em 2em;
+}
+
+td {
+    padding: 8px 15px 8px 15px;
+    text-align: left;
+    margin: 10%;
+}
+
+tbody th:first-child {
+    text-align: left;
+}
+
+td:last-child {text-align: left;}
+
+thead th:first-child {text-align: left}
+
+thead tr {
+    border-bottom: 2px solid gainsboro;
+    border-top: 2px solid gainsboro; 
+}
+
+tfoot {
+    border-bottom: 2px solid gainsboro;
+    border-top: 2px solid gainsboro;  
+    padding: 2px;
+}
+
+
+
+
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <!--
+        Matisse Grigoryan 
+        December 8, 2021
+        Class: 125H
+        Assignment: Term Project-->
+        
+            <title>Adventure Photo Journal</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width+device-width, initial-scale=1">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Montserrat:wght@100;300;400&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="styles/normalize.css">
+            <link rel="stylesheet" href="styles/main.css">
+            <link rel="stylesheet" href="styles/slicknav.css">
+            <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+            <script src="js/jquery.slicknav.min.js"></script>
+            <script type="text/javascript">
+            $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+            </script>     
+    </head>
+                                                             
+    <!--title and banner code inspired by https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_background_hero
+            -->                                                           
+    <body>
+        <div class="title">
+                <div class="banner">
+                <header>
+                    <h1 style="font-size: 350%">Adventure Photo Journal</h1>
+                </header>
+            </div>
+        </div>
+        
+        <div class="row">
+                <h2>Welcome to our adventure photo journal!
+                </h2>
+         </div>    
+            
+        <div class="row">
+            <aside>
+                <p>John Steinbeck -</p>
+                    <blockquote><q>People don’t take trips, trips take people.</q></blockquote>
+            </aside>
+        </div>
+        
+        <nav id="mobile_menu"></nav>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="index.html" class= "current">Home</a></li>
+                <li><a href="pages/photos.html" title="The link to the photo webpage">Photo Gallery</a></li>
+                <li><a href="pages/destlinks.html">Ratings</a></li>
+                <li><a href="pages/visitfam.html"> Family</a>
+                </li>
+                <li><a href="pages/aboutyou.html">About You</a></li>
+            </ul>
+        </nav>
+
+         <div class="row">       
+            <section>
+                <h3>Introduction</h3>
+                    <p>Welcome! My son and I are adventures! <br>The purpose of this website is to share the some of best photos of those adventures.<br> I hope you enjoy our memories as much as we did making them!<br>
+            </section>    
+        </div>
+
+        <div class="row">
+            <figure>
+                <p><img src="images/matisseandmichaelwall.jpeg" alt="Matisse and Michael"></p>
+                <p><img src="images/frontshadows.jpeg" alt="Matisse and Michael shadow"></p>
+                <p><img src="images/frontmichaelwindp.jpeg" alt="Michael in the wind"></p>
+            </figure>
+        </div>
+         
+        <div class="row">
+            <section>
+                <h3>About Us</h3> 
+                    <p>Hi! We are Matisse G and Michael G = MGx2 from Beaverton, Oregon. To get our wiggles out, we explore our neighborhood nature trails. Beaverton is full of beautiful and interesting places to explore. Perfect for daily adventures.<br>Last year, we braved our first long distance road trip – it was 30 days! AND around 6000 miles. <br>We enjoyed it so much, we did another long-distance road trip this year - 5083 miles (I learned to keep track!) and 28 days!<br>This adventure photo journal captures our exploring spirit and the beauty of our country.  </p>
+            </section>
+        </div>
+        
+        <div class="row">
+            <footer>
+                <p> Author Matisse Grigoryan 2021 </p>
+            </footer>
+        </div>
+    </body>
+</html>

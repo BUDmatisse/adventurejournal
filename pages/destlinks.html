@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+<!--
+Matisse Grigoryan 
+December 8, 2021
+Class: 125H
+Assignment: Term Project-->
+        
+        <title>Adventure Photo Journal</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width+device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Montserrat:wght@100;300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/normalize.css">
+        <link rel="stylesheet" href="../styles/main.css">
+         <link rel="stylesheet" href="../styles/destlinks.css">
+        <link rel="stylesheet" href="../styles/slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="../js/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+        $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+        </script>        
+    </head>
+
+    <body>
+        <div class="title">
+            <div class="banner">
+            <header>
+                <h1 style="font-size: 350%">Adventure Photo Journal</h1>
+            </header>
+            </div>    
+        </div>
+
+        <div class="row">
+            <h2>Ratings</h2>
+        </div>    
+            
+        <div class="row">
+            <aside>
+                <p>Dr. Suess -</p>
+                    <blockquote><q>Oh the places you’ll go</q></blockquote>
+            </aside>
+        </div>
+        
+        <nav id="mobile_menu"></nav>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="../index.html" title="Link to Home page">Home</a></li>
+                <li><a href="photos.html" >Photo Gallery</a></li>
+                <li><a href="destlinks.html" class= "current">Ratings</a></li>
+                <li><a href="visitfam.html" >Family</a></li>
+                <li><a href="aboutyou.html">About You</a></li>
+            </ul>
+        </nav> 
+        
+   
+            
+        <main>
+            <div style="overflow-x:auto;">
+            <table>    
+                <caption>Destination Rating</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Top Spots</th>
+                        <th scope="col">Affordable</th>
+                        <th scope="col">Kid Friendly</th>
+                        <th scope="col">Attraction</th>
+                    </tr>               
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Dinosaur NM - Vernal, Ut</th>
+                        <td>Yes, NP Pass or Entry Fee</td>
+                        <td>Absolutely</td>
+                        <td>Many dinosaurs fossils embedded in rock bed</td>
+                    </tr>
+                    <tr>
+                       <th scope="row">Trees of Mystery - Klamath, Ca</th>
+                        <td>$</td>
+                        <td>Yes and family fun</td>
+                        <td>Hiking path through as story book Red Wood Forest, SkyTrail extra bonus</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">John Day Fossil Bed - Fossil, Or</th>
+                        <td>Free</td>
+                        <td>Yes, if they like to hike</td>
+                        <td>Landscape, fossil beds, mostly hiking</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Dinosaur Ridge - Golden, Co</th>
+                        <td>$$</td>
+                        <td>Yes</td>
+                        <td>Tour ride through Dinosaur Ridge, fossilized footprints on Mountainside</td>
+                    </tr>
+                     <tr>
+                        <th scope="row">Craters of the Moon NM - Arco, Id </th>
+                        <td>Yes, NP Pass or Entry Fee</td>
+                        <td>Yes, Interesting Visitor Center</td>
+                        <td>Volcanic cones and fields</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Reindeer Farm - Palmer, AK</th>
+                        <td>Yes</td>
+                        <td>All about the kid experience</td>
+                        <td>Meet, Greet and Feed Reindeers, Moose, Elk</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="4">NM = National Monument and NP = National Park</th>
+                    </tr>
+                </tfoot>
+             </table>
+            </div> 
+        </main>
+        
+        <div class="row">
+            <footer>
+                <p> Author Matisse Grigoryan 2021 </p>
+            </footer>
+        </div>
+    </body>
+</html>

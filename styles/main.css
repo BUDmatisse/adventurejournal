@@ -1,0 +1,214 @@
+/* 
+Matisse Grigoryan 
+December 8, 2021
+Class: 125H
+Assignment: Term Project 
+*/ 
+
+
+*{
+    font-size: clear;
+}
+
+body {
+    margin: 0;
+    min-width: 375px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* 
+banner and title code inspired by https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_background_hero
+And Murach HTML and CSS Textbook Chapter 8
+*/
+
+.title {
+    background-image: url("../images/DinoNMsky.jpeg");
+    height: 650px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+
+.banner {
+    text-align: left;
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    margin-left: 8%;
+    transform: translate(-50%, -50%);
+    font-size: 150%;
+    color: white; 
+}
+
+hi.banner {
+    font-size: 450%
+}
+
+header h2 aside h3 footer {
+    margin: 3em;
+    padding: 3em;
+}
+
+h2 {
+    font-size: 200%;
+    border: 3px solid gainsboro;
+    text-align: center;
+    font-weight: normal;
+    padding: .5em;
+}
+
+aside { 
+    font-family: 'Comforter', cursive;
+    font-size: 250%;
+    text-align: center;
+}
+
+.row {
+    clear: both;
+}
+
+.row a {
+   text-decoration: none; 
+}
+
+h2 {
+    width: 42%
+    float: left;
+}
+
+
+nav#nav_menu ul {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+    list-style-type: none;
+    position: relative;
+    border: 3px solid gainsboro;
+}
+
+nav#nav_menu ul li {
+    flex-basis: 25%;
+}
+
+nav ul li a {
+    display: block;
+	text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-size: 150%;
+}
+
+nav ul li a.current {
+    color: black;
+}
+
+#mobile_menu {
+		display: none;
+	}
+
+section h3 {
+    width: 100%;
+    float: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 200%;
+    padding: .25em;
+    margin: 0em 0em 0em 1em;
+}
+
+section p {
+    width: 100%;
+    float: left;
+    text-align: left;
+    margin: 2em 10em 2em 2em;
+}
+
+
+figure img{
+    width: 32%;
+    float: left;
+    margin: .5em;
+    margin-bottom: 1em;
+    
+}
+
+section {
+    width: 75%;
+    float: left;    
+}
+
+footer { 
+    clear:both;
+    margin: 2em;
+}
+
+@media only screen and (max-width: 960px) {
+    .banner {
+		text-align: center;
+        font-size: 150%;
+	}
+    
+    a.slicknav_btn {
+        float: left !important; 
+    }
+    
+    figure img {
+        display: flex;
+        flex-direction: column;
+        width: 150%;
+    }
+}
+	
+
+@media only screen and (max-width: 767px) {
+    .banner {
+		text-align: center;
+        font-size: 150%;
+	}
+	
+    #nav_menu {
+		display: none; 
+    }
+    
+	#mobile_menu {
+		display: block;
+	}
+    
+    nav ul li a {
+  font-family: 'Montserrat', sans-serif;
+    color: black;
+    }
+	
+	.slicknav_menu {
+		background-color: white !important;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .slicknav_menu a {
+         color: black !important;
+    }
+    
+    figure img {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+	body {
+		font: 90%;
+	}
+    .banner {
+		text-align: center;
+        font-size: 100%;
+    }
+    
+    figure img {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }  
+}
+    
